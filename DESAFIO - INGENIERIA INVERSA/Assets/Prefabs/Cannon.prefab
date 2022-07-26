@@ -339,3 +339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c5d6a91440d4c94f902f8514975dd40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  munition: {fileID: 4431468462939766244, guid: 416bef203ba88c744b2e9c57c03145ba, type: 3}
+  munition2: {fileID: 4938357435462604964, guid: becef90fdc37a39409d496103046475b, type: 3}
+  munition3: {fileID: 231313762810850918, guid: c79d4119aa32ebe4ba91b9dc4696b9f3, type: 3}
+  munition4: {fileID: 2765977009561345721, guid: 69972a3e7cc0a904bbbda1fa2914e231, type: 3}
+  canShoot: 1

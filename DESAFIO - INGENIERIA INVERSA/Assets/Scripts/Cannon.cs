@@ -6,16 +6,35 @@ public class Cannon : MonoBehaviour
 {
     public GameObject munition;
     public bool canShoot = true;
+
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
             Shoot();
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            Shoot();
+            Invoke("Shoot", .4f);
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Shoot();
+            Invoke("Shoot", .4f);
+            Invoke("Shoot", .8f);
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Shoot();
+            Invoke("Shoot", .4f);
+            Invoke("Shoot", .8f);
+            Invoke("Shoot", 1.2f);
         }
     }
 
@@ -26,7 +45,7 @@ public class Cannon : MonoBehaviour
         {
             canShoot = false;
             Instantiate(munition, transform);
-            Invoke("ResetShoot", 1f);
+            Invoke("ResetShoot", .3f);
         }
     }
 
